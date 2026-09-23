@@ -1,0 +1,7 @@
+div {
+  color: white;
+}
+/* Class Names should not start with a number, since those won't work */
+.alert-text {
+  color: red;
+}
