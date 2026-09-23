@@ -5,3 +5,7 @@ div {
 .alert-text {
   color: red;
 }
+/* ID styles start with an #, difference to class is that each element can only have a single id and be a part of multiple classes */
+#title {
+  background-color: rgb(5, 5, 5);
+}
