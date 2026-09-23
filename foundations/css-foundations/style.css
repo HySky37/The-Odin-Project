@@ -9,3 +9,7 @@ div {
 #title {
   background-color: rgb(5, 5, 5);
 }
+/* combination of classes as a identifier */
+.subsection.header {
+  color: red;
+}
