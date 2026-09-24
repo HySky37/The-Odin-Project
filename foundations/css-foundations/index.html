@@ -5,6 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- internal styles overwrite external styles, but is a lot of code for the file and can not be reused, if everything is configured here we do not need the link element above -->
+    <style>
+        div {
+            color: white;
+            background-color: black;
+        }
+
+        p {
+            color: red;
+        }
+    </style>
     <title>Applied Styles</title>
 </head>
 
@@ -26,13 +37,17 @@
 
     <div class="ancestor">
         <p>this section is not effected</p>
-  <div class="contents">
-    <p>this section is effected</p>
-    <div class="contents"><p>it basically applies to nested sections, sections in section</p></div>
-  </div>
-</div>
+        <div class="contents">
+            <p>this section is effected</p>
+            <div class="contents">
+                <p>it basically applies to nested sections, sections in section</p>
+            </div>
+        </div>
+    </div>
 
-<div class="contents"><p>not just the specified section, since this one is not nested</p></div>
+    <div class="contents">
+        <p>not just the specified section, since this one is not nested</p>
+    </div>
 
 </body>
 
