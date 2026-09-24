@@ -13,3 +13,7 @@ div {
 .subsection.header {
   color: red;
 }
+/* classes and ids can also be combined */
+.subsection#preview {
+  color: blue;
+}
