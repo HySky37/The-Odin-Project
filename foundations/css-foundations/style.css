@@ -54,3 +54,17 @@ img {
   height: auto;
   width: 500px;
 }
+
+/* Priorities in case of multiple definitions
+    inline > internal > external
+    internal and external have the highest single Priority by ids
+    the more specific, beats less specific, two class selectors beats one class selesctor
+    if a id selector is used in combination with a class selector, this is more important than a id selector
+        if only id declares color and background but class + id only declares color, the background color will be taken from the id selector
+    h1 beats *, which means all, since it is more specific
+    chained and descendant are equally specific, since both use 2 classes
+    Typography-based properties are inherented, if you have nested classes/ids
+    defined is more important than inherited
+
+    If 2 are equally important the newer one gets used, "Whichever rule was the last defined is the winner"
+*/
