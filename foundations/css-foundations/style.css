@@ -6,6 +6,8 @@ div {
   color: red;
   /* font names in "" and families of fonts without "", the first one has priority so get less specific but add multiple so it does not take the default */
   font-family: "Times New Roman", serif;
+  /* font-weight defines how thick the line is, it is also possible to use bold instead of 700 means the same */
+  font-weight: 700;
 }
 /* ID styles start with an #, difference to class is that each element can only have a single id and be a part of multiple classes */
 #title {
