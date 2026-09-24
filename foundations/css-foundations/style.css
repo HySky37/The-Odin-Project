@@ -49,3 +49,8 @@ div {
   /* name example: */
   color: red;
 }
+/* auto autoadjusts to the second value, this should always be set so that the browser does have a defined space for the image even if it didn't render yet -> no jumping through picture loading */
+img {
+  height: auto;
+  width: 500px;
+}
