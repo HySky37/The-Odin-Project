@@ -4,6 +4,8 @@ div {
 /* Class Names should not start with a number, since those won't work */
 .alert-text {
   color: red;
+  /* font names in "" and families of fonts without "", the first one has priority so get less specific but add multiple so it does not take the default */
+  font-family: "Times New Roman", serif;
 }
 /* ID styles start with an #, difference to class is that each element can only have a single id and be a part of multiple classes */
 #title {
