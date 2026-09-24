@@ -1,5 +1,5 @@
 div {
-  color: white;
+  color: grey;
 }
 /* Class Names should not start with a number, since those won't work */
 .alert-text {
@@ -20,4 +20,25 @@ div {
 /* nested styles require a single space between combinations, this can be expanded indefinitely and a deeper one overwrites a higher one */
 .ancestor .contents {
   background-color: aqua;
+  color: blueviolet;
+}
+
+#title {
+  /* hex example: */
+  color: #1100ff;
+}
+
+.ancestor .contents .contents {
+  /* rgb example: */
+  color: rgb(100, 0, 127);
+}
+
+.ancestor .contents {
+  /* hsl example: */
+  color: hsl(15, 82%, 56%);
+}
+
+.ancestor {
+  /* name example: */
+  color: red;
 }
