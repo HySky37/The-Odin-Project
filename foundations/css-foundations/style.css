@@ -17,3 +17,7 @@ div {
 .subsection#preview {
   color: blue;
 }
+/* nested styles require a single space between combinations, this can be expanded indefinitely and a deeper one overwrites a higher one */
+.ancestor .contents {
+  background-color: aqua;
+}
